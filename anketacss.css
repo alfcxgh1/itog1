@@ -1,0 +1,60 @@
+fieldset.one
+{
+	color:red;
+	border-color: black;
+	margin-top: 20px;
+	margin-right: 50%;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	padding-left: 10px;
+	padding-right: 15px;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	font-weight: bold;
+	clear:both; 
+	text-align:right;
+	line-height:px;
+	background-color: AntiqueWhite;
+}
+fieldset.two
+{
+	color: brown;
+	border-color: cyan;
+	margin-top: 20px;
+	margin-right: 50%;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	font-weight: normal;
+	clear:both; 
+	line-height:25px;
+	background-color: AntiqueWhite;
+}
+label 
+{
+	float:left;
+	padding-right:20px;
+	font-size: 20px;
+
+}
+
+legend
+{
+	text-align: right;
+	color: blue;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+input.radio
+{
+	font-weight: normal;
+}
+
