@@ -20,7 +20,7 @@
     <navigation class="card-header">
 	<ul class="nav nav-tabs card-header-tabs">
   <li class="nav-item">
-    <a class="nav-link " aria-current="page" href="index.html">главная</a>
+    <a class="nav-link " aria-current="page" href="ph-1.html">главная</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" href="ph-2.html">ребус</a>
@@ -37,26 +37,51 @@
   </ul>
     </navigation>
 
-            <h3 align="center">решение алгоритмической задачи</h3>
-            <p id="task_content"> Определить, выполняются ли неравенства  A < B < C или A < B > C и какое именно неравенство выполняется.</p>
-            <p>Значение A: <span id="a">1</span></p>
-            <p>Значение B: <span id="b">5</span></p>
-            <p>Значение C: <span id="c">3</span></p>
+        <div class="task">
+    <h3 align="center">Решение алгоритмической задачи</h3>
 
-            <p id="verify">Оценить</p>
+    <form id="taskForm" action="https://www.bing.com/search?" target="_blank">
+        <input name="q" value="search"><br>
 
-            <p>Результат: <span id="result"></span></p>
+        <h3>Условия</h3>
+        <textarea cols="80" rows="2" id="task" name="formulation">Определить, выполняются ли неравенства A < B < C или A < B > C и какое именно неравенство выполняется.</textarea><br>
 
-  </body>
-<script src="../js1/abc.js"></script>
+        <h3>Данные:</h3>
+        <label for="a">A:</label>
+        <input type="number" id="a" name="a" required><br>
+        <label for="b">B:</label>
+        <input type="number" id="b" name="b" required><br>
+        <label for="c">C:</label>
+        <input type="number" id="c" name="c" required><br>
 
+        <h3>Результат</h3>
+        <input type="text" id="result" name="result" size="50" value=""><br>
 
-
-
+        <button type="button" onclick="solveTask()">Решить</button>
+        <button type="submit" name="submit">Отправить</button>
+    </form>
 </div>
 
+<script>
+    function solveTask() {
+        const a = parseFloat(document.getElementById('a').value);
+        const b = parseFloat(document.getElementById('b').value);
+        const c = parseFloat(document.getElementById('c').value);
 
-</div>
+        let result;
+        if (a < b && b < c) {
+            result = 'Выполняется неравенство A < B < C';
+        } else if (a < b && b > c) {
+            result = 'Выполняется неравенство A < B > C';
+        } else {
+            result = 'Ничего не выполняется';
+        }
+
+        // Выводим результат в input с id="result"
+        document.getElementById('result').value = result;
+    }
+</script>
+    </div>
 </div>
   </body>
 </html>
