@@ -1,11 +1,11 @@
 [
   {
     "id": "1",
-    "title": "Wally",
+    "title": "Буква А",
     "vendor_code": "111",
     "description": "",
     "price": 150,
-    "img": "valli.jpg"
+    "img": "a.jpg"
   },
   {
     "id": "2",
