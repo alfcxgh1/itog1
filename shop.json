@@ -3,90 +3,90 @@
     "id": "1",
     "title": "Буква А",
     "vendor_code": "111",
-    "description": "",
-    "price": 150,
+    "description": "Первая буква алфавита!",
+    "price": 1111,
     "img": "a.jpg"
   },
   {
     "id": "2",
-    "title": "CAT",
+    "title": "Буква Е",
     "vendor_code": "222",
-    "description": "Описание 2",
-    "price": 2,
-    "img": "cat.jpg"
+    "description": "Пикольная и может делать ЕЕЕ",
+    "price": 350,
+    "img": "e.jpg"
   },
   {
     "id": "3",
-    "title": "mult_Avatar",
+    "title": "Буква Ё",
     "vendor_code": "333",
-    "description": "Описание 3",
-    "price": 300,
-    "img": "avatar2.jpg"
+    "description": "Самая лучшая",
+    "price": 33000,
+    "img": "ei.jpg"
   },
   {
     "id": "4",
-    "title": "Яхта",
+    "title": "Буква И",
     "vendor_code": "444e",
-    "description": "Описание 4",
-    "price": 1200,
-    "img": "https://raw.githubusercontent.com/vmarshirov/g06u28/main/images/uso_004.jpg"
+    "description": "И?",
+    "price": 700,
+    "img": "i.jpg"
   }
   ,
   {
     "id": "5",
-    "title": "Zooro",
+    "title": "Буква О",
     "vendor_code": "4445e",
-    "description": "Описание 6",
-    "price": 400,
-    "img": "zooro.jpg"
+    "description": "ОооооОоООо",
+    "price": 1000,
+    "img": "o.jpg"
   },
   {
     "id": "6",
-    "title": "Wait",
+    "title": "Буква У",
     "vendor_code": "4446e",
-    "description": "Описание 6",
-    "price": 400,
-    "img": "https://raw.githubusercontent.com/vmarshirov/g06u28/main/images/1_1.png"
+    "description": "Так говорит сова",
+    "price": 445,
+    "img": "u.jpg"
   },
   {
     "id": "7",
-    "title": "Bob",
+    "title": "Буква Ы",
     "vendor_code": "4447e",
-    "description": "Описание 7",
-    "price": 700,
-    "img": "https://raw.githubusercontent.com/vmarshirov/g06u28/main/images/1_2.png"
+    "description": "Для любителей",
+    "price": 210,
+    "img": "uu.jpg"
   },
   {
     "id": "8",
-    "title": "Avatar",
+    "title": "Буква Э",
     "vendor_code": "4448e",
-    "description": "Описание 8",
-    "price": 800,
-    "img": "avatar.jpg"
+    "description": "База и основа",
+    "price": 500,
+    "img": "eu.jpg"
   },
   {
     "id": "9",
-    "title": "Товар 9",
+    "title": "Буква Ю",
     "vendor_code": "444e",
-    "description": "Описание 9",
-    "price": 400,
-    "img": "https://raw.githubusercontent.com/vmarshirov/g06u28/main/images/1_4.png"
+    "description": "Твоё мнение она..",
+    "price": 666,
+    "img": "yu.jpg"
   }
   ,
   {
     "id": "10",
-    "title": "Avatar",
+    "title": "Буква Я",
     "vendor_code": "44410e",
-    "description": "Описание 10",
-    "price": 900,
-    "img": "https://raw.githubusercontent.com/vmarshirov/g06u28/main/images/1_5.png"
+    "description": "self-care и семья",
+    "price": 7777,
+    "img": "ya.jpg"
   },
   {
     "id": "11",
-    "title": "Товар 11",
+    "title": "НАБОР",
     "vendor_code": "44411e",
-    "description": "Описание 1",
-    "price": 1100,
-    "img": "https://raw.githubusercontent.com/vmarshirov/g06u28/main/images/1_6.png"
+    "description": "Полный гласный берспредел",
+    "price": 99999,
+    "img": "nabor.jpg"
   }
 ]
