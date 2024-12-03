@@ -2,7 +2,7 @@
   {
     "id": "1",
     "title": "Буква А",
-    "vendor_code": "букваА",
+    "vendor_code": "111",
     "description": "Первая буква алфавита!",
     "price": 1111,
     "img": "a.jpg"
@@ -10,7 +10,7 @@
   {
     "id": "2",
     "title": "Буква Е",
-    "vendor_code": "букваЕ",
+    "vendor_code": "222",
     "description": "Пикольная и может делать ЕЕЕ",
     "price": 350,
     "img": "e.jpg"
@@ -26,7 +26,7 @@
   {
     "id": "4",
     "title": "Буква И",
-    "vendor_code": "Буква И",
+    "vendor_code": "444e",
     "description": "И?",
     "price": 700,
     "img": "i.jpg"
@@ -35,7 +35,7 @@
   {
     "id": "5",
     "title": "Буква О",
-    "vendor_code": "Буква О",
+    "vendor_code": "4445e",
     "description": "ОооооОоООо",
     "price": 1000,
     "img": "o.jpg"
@@ -43,7 +43,7 @@
   {
     "id": "6",
     "title": "Буква У",
-    "vendor_code": "Буква У",
+    "vendor_code": "4446e",
     "description": "Так говорит сова",
     "price": 445,
     "img": "u.jpg"
@@ -51,7 +51,7 @@
   {
     "id": "7",
     "title": "Буква Ы",
-    "vendor_code": "Буква Ы",
+    "vendor_code": "4447e",
     "description": "Для любителей",
     "price": 210,
     "img": "uu.jpg"
@@ -59,7 +59,7 @@
   {
     "id": "8",
     "title": "Буква Э",
-    "vendor_code": "Буква Э",
+    "vendor_code": "4448e",
     "description": "База и основа",
     "price": 500,
     "img": "eu.jpg"
@@ -67,7 +67,7 @@
   {
     "id": "9",
     "title": "Буква Ю",
-    "vendor_code": "Буква Ю",
+    "vendor_code": "444e",
     "description": "Твоё мнение она..",
     "price": 666,
     "img": "yui.jpg"
@@ -76,7 +76,7 @@
   {
     "id": "10",
     "title": "Буква Я",
-    "vendor_code": "Буква Я",
+    "vendor_code": "44410e",
     "description": "self-care и семья",
     "price": 7777,
     "img": "ya.jpg"
@@ -84,7 +84,7 @@
   {
     "id": "11",
     "title": "НАБОР",
-    "vendor_code": "НАБОР",
+    "vendor_code": "44411e",
     "description": "Полный гласный берспредел",
     "price": 99999,
     "img": "nabor.jpg"
