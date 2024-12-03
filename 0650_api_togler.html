@@ -1,94 +1,151 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+function sort(){
+    let price=document.getElementById("price")
+    let title=document.getElementById("title")
+    if(price.checked){
+        document.getElementById('node_for_insert').innerHTML = '';
+        getResponce()}
 
-    <meta charset="UTF-8">
-    <title>Магазин</title>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    if(title.checked){
+        document.getElementById('node_for_insert').innerHTML = '';
+        getResponce1()}
+}
 
-</head>
-<body>
+function search(){
 
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" href="catsstyle.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  </head>
-  <body>
 
-<div class="container">
-  <header class="card">
-        <div class="card-body">
-            <h5 class="card-title"> буква ё — становление лучшей буквы </h5>
-        </div>
-    </header>
-<div class="card ">
 
-   <navigation class="card-header">
-<ul class="nav nav-tabs card-header-tabs">
-  <li class="nav-item">
-    <a class="nav-link" aria-current="page" href="index.html">главная</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link active" href="0650_api_togler.html">магазин</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="ph-3.html">таблица</a>
-  </li>
-  </li>
-    <li class="nav-item">
-    <a class="nav-link" href="anketa.html">форма анкета</a>
-  </li>
-    <li class="nav-item">
-    <a class="nav-link" href="Task.html">задача</a>
-  </li>
 
-    
-       <!--начало уникального содержания страницы-->
-        <div class="card-body">
-            <h5 class='card-title text-center'>Магазин</h5>
-             <input type="radio" id="price" name="sort"  onchange="sort()"> price  </input>
-             <input type="radio" id="title" name="sort"  checked onchange="sort()" > title </input>
-             <input type="text" id="search" name="search"  onchange="search()"> поиск  </input>
-            <form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
-                <input name="q" type="hidden" value="search">
-                <ul class="d-flex flex-row justify-content-around flex-wrap bg-light" id="node_for_insert">
 
-                <!--начало генерируемого фрагмента кода -->
-                </ul>
-                <input class="btn btn-primary" type="Submit" value="В корзину">
-            </form>
-        </div>
-        <!--окончание уникального содержания страницы-->
+    if(price.checked){
+        document.getElementById('node_for_insert').innerHTML = '';
+        getResponce()}
 
-    </div>
-       <div class="card">
-        <div class="card-body">
-            Footer
-        </div>
-    </div>
-</div>
+    if(title.checked){
+        document.getElementById('node_for_insert').innerHTML = '';
+        getResponce1()}
+}
 
-<!--
-https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Fetching_data
-https://rapidapi.com/category/Weather
-https://rapidapi.com/collection/list-of-free-apis
-https://rapidapi.com/weatherapi/api/weatherapi-com/
-https://rapidapi.com/weatherapi/api/weatherapi-com/
-github
-g00u00@outlook.com
-https://rapidapi.com/weatherapi/api/weatherapi-com/pricing
-https://rapidapi.com/apishub/api/yahoo-weather5/
-https://rapidapi.com/solutionsbynotnull/api/live-metal-prices/
--->
-    
-</body>
-<script src="./0650_api.js"></script>
-</html>
+
+
+async function getResponce() {
+
+    let responce = await fetch("shop.json")
+
+    let content = await responce.text()
+    console.log(content)
+    content = JSON.parse(content)
+    content = content.splice(0, 11)
+    //content.sort()
+    console.log(content)
+    let key
+    /*for (key in content) {
+        console.log(content[key].id, content[key].title)
+        console.log(content[key])
+    }*/
+    content_price=content.sort((a, b) => a.price - b.price);
+
+    /*
+     products: []
+     filteredProducts: []
+     const query = this.searchQuery.toLowerCase();
+            this.filteredProducts = this.products.filter(product => {
+                return (
+                    product.title.toLowerCase().includes(query) ||
+                    product.description.toLowerCase().includes(query) ||
+                    product.price.toString().includes(query)
+                );
+            });
+    */
+   content_filter=[]
+    let word=document.getElementById('search').value.toLowerCase();
+   //let word = 'search'.toLowerCase();
+    content_filter= content_price.filter((product) =>{
+        return (
+                    product.title.toLowerCase().includes(word) ||
+                    product.description.toLowerCase().includes(word) ||
+                    product.price.toString().includes(word)
+                );
+
+    });
+    console.log(content_filter);
+
+    let node_for_insert = document.getElementById("node_for_insert")
+    //node_for_insert.innerHTML='';
+    for (key in content_filter) {
+                node_for_insert.innerHTML += `
+                <li style="width: 310px" class="d-flex flex-column m-1 p-1 border bg-body">
+                <img style="width: 180px" class="align-self-center" src=${content_filter[key].img}>
+                <h5 class="card-title">${content_filter[key].title}</h5>
+                <p class="card-text">${content_filter[key].description}. Цена ${content_filter[key].price} р.</p>
+                <input type="hidden" name= "vendor_code" value=${content_filter[key].vendor_code}>
+                <p class="card-text" >!!Заказать!! <input class="w-25" type="text" value="0" name="check"></p>
+                </li>
+                        `
+            }
+
+}
+async function getResponce1() {
+   // let responce = await fetch("https://my-json-server.typicode.com/typicode/demo/posts")
+    //let responce = await fetch("https://vmarshirov.github.io/g06u28/030_js/data/0620.json")
+    //let responce = await fetch("http://185.182.111.214:7628/tmp/g06u28.txt_api.json")
+//    let responce = await fetch("shop.json")
+    let responce = await fetch("shop.json")
+
+    let content = await responce.text()
+    console.log(content)
+    content = JSON.parse(content)
+    content = content.splice(0, 11)
+    //content.sort()
+    console.log(content)
+    let key
+    /*for (key in content) {
+        console.log(content[key].id, content[key].title)
+        console.log(content[key])
+    }*/
+
+    // sort by name
+    content_title=content.sort((a, b) => {
+    const nameA = a.title.toUpperCase(); // ignore upper and lowercase
+    const nameB = b.title.toUpperCase(); // ignore upper and lowercase
+      if (nameA < nameB) {
+        return -1;
+      }
+      if (nameA > nameB) {
+        return 1;
+      }
+
+      // names must be equal
+      return 0;
+    });
+
+
+    content_filter=[]
+    let word=document.getElementById('search').value.toLowerCase();
+   //let word = 'search'.toLowerCase();
+    content_filter= content_title.filter((product) =>{
+        return (
+                    product.title.toLowerCase().includes(word) ||
+                    product.description.toLowerCase().includes(word) ||
+                    product.price.toString().includes(word)
+                );
+
+    });
+    console.log(content_filter);
+
+    //node_for_insert.innerHTML='';
+    let node_for_insert = document.getElementById("node_for_insert")
+    for (key in content_filter) {
+                node_for_insert.innerHTML += `
+                <li style="width: 310px" class="d-flex flex-column m-1 p-1 border bg-body">
+                <img style="width: 180px" class="align-self-center" src=${content_filter[key].img}>
+                <h5 class="card-title">${content_filter[key].title}</h5>
+                <p class="card-text">${content_filter[key].description}. Цена ${content_filter[key].price} р.</p>
+                <input type="hidden" name= "vendor_code" value=${content_filter[key].vendor_code}>
+                <p class="card-text" >Заказать <input class="w-25" type="checkbox" name="check" value="0" onClick='this.value = this.checked ? 1 : 0'></p>
+                </li>
+                        `
+            }
+
+}
+
+sort()
