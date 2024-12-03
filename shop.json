@@ -2,7 +2,7 @@
   {
     "id": "1",
     "title": "Буква А",
-    "vendor_code": "111",
+    "vendor_code": "букваА",
     "description": "Первая буква алфавита!",
     "price": 1111,
     "img": "a.jpg"
@@ -10,7 +10,7 @@
   {
     "id": "2",
     "title": "Буква Е",
-    "vendor_code": "222",
+    "vendor_code": "букваЕ",
     "description": "Пикольная и может делать ЕЕЕ",
     "price": 350,
     "img": "e.jpg"
