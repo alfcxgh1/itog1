@@ -1,0 +1,92 @@
+[
+  {
+    "id": "1",
+    "title": "Wally",
+    "vendor_code": "111",
+    "description": "",
+    "price": 150,
+    "img": "valli.jpg"
+  },
+  {
+    "id": "2",
+    "title": "CAT",
+    "vendor_code": "222",
+    "description": "Описание 2",
+    "price": 2,
+    "img": "cat.jpg"
+  },
+  {
+    "id": "3",
+    "title": "mult_Avatar",
+    "vendor_code": "333",
+    "description": "Описание 3",
+    "price": 300,
+    "img": "avatar2.jpg"
+  },
+  {
+    "id": "4",
+    "title": "Яхта",
+    "vendor_code": "444e",
+    "description": "Описание 4",
+    "price": 1200,
+    "img": "https://raw.githubusercontent.com/vmarshirov/g06u28/main/images/uso_004.jpg"
+  }
+  ,
+  {
+    "id": "5",
+    "title": "Zooro",
+    "vendor_code": "4445e",
+    "description": "Описание 6",
+    "price": 400,
+    "img": "zooro.jpg"
+  },
+  {
+    "id": "6",
+    "title": "Wait",
+    "vendor_code": "4446e",
+    "description": "Описание 6",
+    "price": 400,
+    "img": "https://raw.githubusercontent.com/vmarshirov/g06u28/main/images/1_1.png"
+  },
+  {
+    "id": "7",
+    "title": "Bob",
+    "vendor_code": "4447e",
+    "description": "Описание 7",
+    "price": 700,
+    "img": "https://raw.githubusercontent.com/vmarshirov/g06u28/main/images/1_2.png"
+  },
+  {
+    "id": "8",
+    "title": "Avatar",
+    "vendor_code": "4448e",
+    "description": "Описание 8",
+    "price": 800,
+    "img": "avatar.jpg"
+  },
+  {
+    "id": "9",
+    "title": "Товар 9",
+    "vendor_code": "444e",
+    "description": "Описание 9",
+    "price": 400,
+    "img": "https://raw.githubusercontent.com/vmarshirov/g06u28/main/images/1_4.png"
+  }
+  ,
+  {
+    "id": "10",
+    "title": "Avatar",
+    "vendor_code": "44410e",
+    "description": "Описание 10",
+    "price": 900,
+    "img": "https://raw.githubusercontent.com/vmarshirov/g06u28/main/images/1_5.png"
+  },
+  {
+    "id": "11",
+    "title": "Товар 11",
+    "vendor_code": "44411e",
+    "description": "Описание 1",
+    "price": 1100,
+    "img": "https://raw.githubusercontent.com/vmarshirov/g06u28/main/images/1_6.png"
+  }
+]
